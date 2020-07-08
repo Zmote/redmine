@@ -1,7 +1,0 @@
-# Spanish translations for Time Report Queries Plugin
-# by Jérôme BATAILLE (redmine-support@smile.fr)
-
-es:
-  label_criteria: Criteria
-  label_time_report_query_plural: Time entry Reports
-  label_max_criteria: "%{count} maximo"

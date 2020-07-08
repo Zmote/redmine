@@ -1,7 +1,0 @@
-# French translations for Time Report Queries Plugin
-# by Jérôme BATAILLE (redmine-support@smile.fr)
-
-fr:
-  label_criteria: Critères
-  label_time_report_query_plural: Rapports du temps passé
-  label_max_criteria: "%{count} maximum"
