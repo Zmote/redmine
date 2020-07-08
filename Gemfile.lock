@@ -163,7 +163,6 @@ GEM
     rubocop-rails (2.3.2)
       rack (>= 1.1)
       rubocop (>= 0.72.0)
-    ruby-filemagic (0.7.2)
     ruby-ole (1.2.12.2)
     ruby-openid (2.9.2)
     ruby-progressbar (1.10.1)
@@ -231,7 +230,6 @@ DEPENDENCIES
   rubocop (~> 0.76.0)
   rubocop-performance (~> 1.5.0)
   rubocop-rails (~> 2.3.0)
-  ruby-filemagic
   ruby-openid (~> 2.9.2)
   rubyzip (>= 1.0.0)
   selenium-webdriver
