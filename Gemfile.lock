@@ -59,8 +59,6 @@ GEM
       regexp_parser (~> 1.5)
       xpath (~> 3.2)
     childprocess (3.0.0)
-    combine_pdf (1.0.16)
-      ruby-rc4 (>= 0.1.5)
     concurrent-ruby (1.1.6)
     crass (1.0.6)
     css_parser (1.7.1)
@@ -166,7 +164,6 @@ GEM
     ruby-ole (1.2.12.2)
     ruby-openid (2.9.2)
     ruby-progressbar (1.10.1)
-    ruby-rc4 (0.1.5)
     rubyzip (2.3.0)
     selenium-webdriver (3.142.7)
       childprocess (>= 0.5, < 4.0)
@@ -205,7 +202,6 @@ DEPENDENCIES
   actionpack-xml_parser
   bundler (>= 1.5.0)
   capybara (~> 3.25.0)
-  combine_pdf
   csv (~> 3.1.1)
   ffi
   i18n (~> 1.6.0)
@@ -231,7 +227,6 @@ DEPENDENCIES
   rubocop-performance (~> 1.5.0)
   rubocop-rails (~> 2.3.0)
   ruby-openid (~> 2.9.2)
-  rubyzip (>= 1.0.0)
   selenium-webdriver
   simplecov (~> 0.17.0)
   spreadsheet (~> 0.6.8)
