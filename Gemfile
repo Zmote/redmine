@@ -16,7 +16,7 @@ gem "csv", "~> 3.1.1"
 gem "nokogiri", "~> 1.10.0"
 gem "i18n", "~> 1.6.0"
 gem "rbpdf", "~> 1.20.0"
-
+gem 'puma', '~> 3.7'
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :x64_mingw, :mswin]
 
@@ -48,7 +48,6 @@ require 'yaml'
 
 group :production do
   gem 'pg', '~> 1.2.3'
-  gem "puma"
 end
 
 group :development do
@@ -62,7 +61,6 @@ group :test do
   gem "simplecov", "~> 0.17.0", :require => false
   gem "ffi", platforms: [:mingw, :x64_mingw, :mswin]
   # For running system tests
-  gem 'puma', '~> 3.7'
   gem "capybara", (RUBY_VERSION < "2.4" ? "~> 3.15.1" : "~> 3.25.0")
   gem "selenium-webdriver"
   # RuboCop
