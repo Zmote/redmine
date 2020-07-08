@@ -48,10 +48,12 @@ require 'yaml'
 
 group :production do
   gem 'pg', '~> 1.2.3'
+  gem "puma"
 end
 
 group :development do
   gem "yard"
+  gem "puma"
 end
 
 group :test do
