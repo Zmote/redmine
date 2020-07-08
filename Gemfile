@@ -18,6 +18,7 @@ gem "i18n", "~> 1.6.0"
 gem "rbpdf", "~> 1.20.0"
 gem 'puma', '~> 3.7'
 gem 'redmine_crm'
+gem 'vcard', '~> 0.2.8'
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :x64_mingw, :mswin]
 
