@@ -52,7 +52,6 @@ end
 
 group :development do
   gem "yard"
-  gem "puma"
 end
 
 group :test do
