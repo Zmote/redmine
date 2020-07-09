@@ -40,11 +40,12 @@ Rails.application.configure do
   ActionMailer::Base.smtp_settings = {
      :user_name => ENV['GMAIL_USERNAME'],
      :password => ENV['GMAIL_PASSWORD'],
-     :domain => 'smtp.gmail.com',
+     :domain => 'gmail.com',
      :address => 'smtp.gmail.com',
      :port => 587,
      :authentication => :plain,
-     :enable_starttls_auto => true
+     :enable_starttls_auto => true,
+     :openssl_verify_mode => 'none'
    }
-  config.action_mailer.default_url_options = { host: ENV['HEROKU_APP_DOMAIN'] }
+  config.action_mailer.default_url_options = { host: 'gmail.com' }
 end
