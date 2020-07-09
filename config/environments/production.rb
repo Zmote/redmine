@@ -24,16 +24,27 @@ Rails.application.configure do
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
+  #
+  # ActionMailer::Base.smtp_settings = {
+  #   :user_name => ENV['SENDGRID_USERNAME'],
+  #   :password => ENV['SENDGRID_PASSWORD'],
+  #   :domain => ENV['HEROKU_APP_DOMAIN'],
+  #   :address => 'smtp.sendgrid.net',
+  #   :port => 587,
+  #   :authentication => :plain,
+  #   :enable_starttls_auto => true
+  # }
+  # ActionMailer::Base.delivery_method = :smtp
+  # config.action_mailer.default_url_options = { host: ENV['HEROKU_APP_DOMAIN'] }
   
   ActionMailer::Base.smtp_settings = {
-    :user_name => ENV['SENDGRID_USERNAME'],
-    :password => ENV['SENDGRID_PASSWORD'],
-    :domain => ENV['HEROKU_APP_DOMAIN'],
-    :address => 'smtp.sendgrid.net',
-    :port => 587,
-    :authentication => :plain,
-    :enable_starttls_auto => true
-  }
-  ActionMailer::Base.delivery_method = :smtp
+     :user_name => ENV['GMAIL_USERNAME'],
+     :password => ENV['GMAIL_PASSWORD'],
+     :domain => ENV['HEROKU_APP_DOMAIN'],
+     :address => 'smtp.gmail.net',
+     :port => 587,
+     :authentication => :plain,
+     :enable_starttls_auto => true
+   }
   config.action_mailer.default_url_options = { host: ENV['HEROKU_APP_DOMAIN'] }
 end
