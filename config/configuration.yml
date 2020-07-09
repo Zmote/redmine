@@ -15,7 +15,6 @@ default:
   email_delivery:
     delivery_method: :smtp
     smtp_settings:
-      enable_starttls_auto: true
       address: "${MAILGUN_SMTP_SERVER}"
       port: "${MAILGUN_SMTP_PORT}"
       domain: "${MAILGUN_DOMAIN}"
