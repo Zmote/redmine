@@ -40,7 +40,7 @@ Rails.application.configure do
   ActionMailer::Base.smtp_settings = {
      :user_name => ENV['GMAIL_USERNAME'],
      :password => ENV['GMAIL_PASSWORD'],
-     :domain => ENV['HEROKU_APP_DOMAIN'],
+     :domain => 'smtp.gmail.com',
      :address => 'smtp.gmail.com',
      :port => 587,
      :authentication => :plain,
