@@ -14,13 +14,6 @@ default:
   # http://guides.rubyonrails.org/action_mailer_basics.html#action-mailer-configuration
   email_delivery:
     delivery_method: :smtp
-    smtp_settings:
-      address: "${MAILGUN_SMTP_SERVER}"
-      port: "${MAILGUN_SMTP_PORT}"
-      domain: "${MAILGUN_DOMAIN}"
-      user_name: "${MAILGUN_SMTP_LOGIN}"
-      password: "${MAILGUN_SMTP_PASSWORD}"
-      authentication: :plain
   # ==== Simple SMTP server at localhost
   #
   #  email_delivery:
