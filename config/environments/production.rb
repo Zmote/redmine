@@ -41,7 +41,7 @@ Rails.application.configure do
      :user_name => ENV['GMAIL_USERNAME'],
      :password => ENV['GMAIL_PASSWORD'],
      :domain => ENV['HEROKU_APP_DOMAIN'],
-     :address => 'smtp.gmail.net',
+     :address => 'smtp.gmail.com',
      :port => 587,
      :authentication => :plain,
      :enable_starttls_auto => true
